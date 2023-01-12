@@ -1,0 +1,27 @@
+.blind, .hidden, legend, table caption {
+    display: block;
+    overflow: hidden;
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    font-size: 1px;
+    line-height: 1px;
+    clip: rect(1px,1px,1px,1px);
+}
+h2{
+  font-size: 20px;
+  border-bottom: 2px solid grey;
+}
+h3 {
+  font-size: 15px;
+}
+button {
+  cursor: pointer;
+}
+
+.p_check, .p_check2 {
+  border-bottom: 2px solid grey;
+  padding-bottom: 5px;
+}
+
+

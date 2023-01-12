@@ -1,6 +1,7 @@
-#url
+# url
 import clipboard, webbrowser
-html=".html"
+
+html = ".html"
 url = clipboard.paste()
 
 if "/uk/" in url:
@@ -11,6 +12,7 @@ else:
 url = url.replace('samsung.com', 'samsung.com/editor.html/content/samsung')
 url = url[0:-1] + html
 clipboard.copy(url)
-Chrome = 'C:\Program Files\Google\Chrome\Application\chrome.exe'
+
+Chrome = '\"C:\Program Files\Google\Chrome\Application\chrome.exe\"'
 webbrowser.register(name=Chrome, klass=None, instance=webbrowser.BackgroundBrowser(Chrome))
 webbrowser.open(url)

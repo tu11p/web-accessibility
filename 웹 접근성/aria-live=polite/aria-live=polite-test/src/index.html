@@ -1,0 +1,412 @@
+<!--[20221028] aria-live="polite" 확인-->
+
+<h2>aria-live="polite" 확인</h2>
+
+
+<h3>[변경되는 영역에 직접 aria-live="polite"]</h3>
+<button id="p_check_btn">보기</button>
+
+<div class="p_check" style="display:none;">
+  <div class="p_check_num_1">
+    <p>1. 변경되는 영역에 직접 aria-live="polite" 제공된 상태 / display: none -> block / 텍스트 추가되는 상태 / 텍스트 딜레이 있음</p>
+
+    <button id="cont_1_btn">Check</button>
+    <div id="cont_1">
+      <p id="cont_1_txt">
+        <p aria-live="polite" style="display:none;" id="cont_1_text"></p>
+      </p>
+    </div>
+  </div>
+  
+  <div class="p_check_num_2">
+    <p>2. 변경되는 영역에 직접 aria-live="polite" 제공된 상태 / display: none -> block / 텍스트 추가되는 상태 / 텍스트 딜레이 없음</p>
+
+    <button id="cont_2_btn">Check</button>
+    <div id="cont_2">
+      <p id="cont_2_txt">
+        <p aria-live="polite" style="display:none;" id="cont_2_text"></p>
+      </p>
+    </div>
+  </div>
+  
+  <div class="p_check_num_3">
+    <p>3. 변경되는 영역에 직접 aria-live="polite" 제공된 상태 / display: none -> block / 텍스트 제공된 상태 /</p>
+
+    <button id="cont_3_btn">Check</button>
+    <div id="cont_3">
+      <p id="cont_3_txt">
+        <p aria-live="polite" style="display:none;" id="cont_3_text">Text</p>
+      </p>
+    </div>
+  </div>
+  
+  <div class="p_check_num_4">
+    <p>4. 변경되는 영역에 직접 aria-live="polite" 제공된 상태 / display: block / 텍스트 추가되는 상태 / 텍스트 딜레이 있음</p>
+
+    <button id="cont_4_btn">Check</button>
+    <div id="cont_4">
+      <p id="cont_4_txt">
+        <p aria-live="polite" style="display:block;" id="cont_4_text"></p>
+      </p>
+    </div>
+  </div>
+  
+  <div class="p_check_num_5">
+    <p>5. 변경되는 영역에 직접 aria-live="polite" 제공된 상태 / display: block / 텍스트 추가되는 상태 / 텍스트 딜레이 없음</p>
+
+    <button id="cont_5_btn">Check</button>
+    <div id="cont_5">
+      <p id="cont_5_txt">
+        <p aria-live="polite" style="display:block;" id="cont_5_text"></p>
+      </p>
+    </div>
+  </div>
+  
+  <div class="p_check_num_6">
+    <p>6. 변경되는 영역에 직접 aria-live="polite" 제공된 상태 / display: block / 텍스트 제공된 상태 /</p>
+
+    <button id="cont_6_btn">Check</button>
+    <div id="cont_6">
+      <p id="cont_6_txt">
+        <p aria-live="polite" style="display:block;" id="cont_6_text">Text</p>
+      </p>
+    </div>
+  </div>
+  
+  <div class="p_check_num_7">
+    <p>7. 변경되는 영역에 직접 aria-live="polite" 추가되는 상태 / 추가 시 딜레이 없음 / display: none -> block / 텍스트 추가되는 상태 / 텍스트 딜레이 있음</p>
+
+    <button id="cont_7_btn">Check</button>
+    <div id="cont_7">
+      <p id="cont_7_txt">
+        <p style="display:none;" id="cont_7_text"></p>
+      </p>
+    </div>
+  </div>
+  
+  <div class="p_check_num_8">
+    <p>8. 변경되는 영역에 직접 aria-live="polite" 추가되는 상태 / 추가 시 딜레이 없음 / display: none -> block / 텍스트 추가되는 상태 / 텍스트 딜레이 없음</p>
+
+    <button id="cont_8_btn">Check</button>
+    <div id="cont_8">
+      <p id="cont_8_txt">
+        <p style="display:none;" id="cont_8_text"></p>
+      </p>
+    </div>
+  </div>
+  
+  <div class="p_check_num_9">
+    <p>9. 변경되는 영역에 직접 aria-live="polite" 추가되는 상태 / 추가 시 딜레이 없음 / display: none -> block / 텍스트 제공된 상태 /</p>
+
+    <button id="cont_9_btn">Check</button>
+    <div id="cont_9">
+      <p id="cont_9_txt">
+        <p style="display:none;" id="cont_9_text">Text</p>
+      </p>
+    </div>
+  </div>
+  
+  <div class="p_check_num_10">
+    <p>10. 변경되는 영역에 직접 aria-live="polite" 추가되는 상태 / 추가 시 딜레이 없음 / display: block / 텍스트 추가되는 상태 / 텍스트 딜레이 있음</p>
+
+    <button id="cont_10_btn">Check</button>
+    <div id="cont_10">
+      <p id="cont_10_txt">
+        <p style="display:block;" id="cont_10_text"></p>
+      </p>
+    </div>
+  </div>
+  
+  <div class="p_check_num_11">
+    <p>11. 변경되는 영역에 직접 aria-live="polite" 추가되는 상태 / 추가 시 딜레이 없음 / display: block / 텍스트 추가되는 상태 / 텍스트 딜레이 없음</p>
+
+    <button id="cont_11_btn">Check</button>
+    <div id="cont_11">
+      <p id="cont_11_txt">
+        <p style="display:block;" id="cont_11_text"></p>
+      </p>
+    </div>
+  </div>
+  
+  <div class="p_check_num_12">
+    <p>12. 변경되는 영역에 직접 aria-live="polite" 추가되는 상태 / 추가 시 딜레이 없음 / display: block / 텍스트 제공된 상태 /</p>
+
+    <button id="cont_12_btn">Check</button>
+    <div id="cont_12">
+      <p id="cont_12_txt">
+        <p style="display:block;" id="cont_12_text">Text</p>
+      </p>
+    </div>
+  </div>
+  
+  <div class="p_check_num_13">
+    <p>13. 변경되는 영역에 직접 aria-live="polite" 추가되는 상태 / 추가 시 딜레이 있음 / display: none -> block / 텍스트 추가되는 상태 / 텍스트 딜레이 있음</p>
+
+    <button id="cont_13_btn">Check</button>
+    <div id="cont_13">
+      <p id="cont_13_txt">
+        <p style="display:none;" id="cont_13_text"></p>
+      </p>
+    </div>
+  </div>
+  
+  <div class="p_check_num_14">
+    <p>14. 변경되는 영역에 직접 aria-live="polite" 추가되는 상태 / 추가 시 딜레이 있음 / display: none -> block / 텍스트 추가되는 상태 / 텍스트 딜레이 없음</p>
+
+    <button id="cont_14_btn">Check</button>
+    <div id="cont_14">
+      <p id="cont_14_txt">
+        <p style="display:none;" id="cont_14_text"></p>
+      </p>
+    </div>
+  </div>
+  
+  <div class="p_check_num_15">
+    <p>15. 변경되는 영역에 직접 aria-live="polite" 추가되는 상태 / 추가 시 딜레이 있음 / display: none -> block / 텍스트 제공된 상태 /</p>
+
+    <button id="cont_15_btn">Check</button>
+    <div id="cont_15">
+      <p id="cont_15_txt">
+        <p style="display:none;" id="cont_15_text">Text</p>
+      </p>
+    </div>
+  </div>
+  
+  <div class="p_check_num_16">
+    <p>16. 변경되는 영역에 직접 aria-live="polite" 추가되는 상태 / 추가 시 딜레이 있음 / display: block / 텍스트 추가되는 상태 / 텍스트 딜레이 있음</p>
+
+    <button id="cont_16_btn">Check</button>
+    <div id="cont_16">
+      <p id="cont_16_txt">
+        <p style="display:block;" id="cont_16_text"></p>
+      </p>
+    </div>
+  </div>
+  
+  <div class="p_check_num_17">
+    <p>17. 변경되는 영역에 직접 aria-live="polite" 추가되는 상태 / 추가 시 딜레이 있음 / display: block / 텍스트 추가되는 상태 / 텍스트 딜레이 없음</p>
+
+    <button id="cont_17_btn">Check</button>
+    <div id="cont_17">
+      <p id="cont_17_txt">
+        <p style="display:block;" id="cont_17_text"></p>
+      </p>
+    </div>
+  </div>
+  
+  <div class="p_check_num_18">
+    <p>18. 변경되는 영역에 직접 aria-live="polite" 추가되는 상태 / 추가 시 딜레이 있음 / display: block / 텍스트 제공된 상태 /</p>
+
+    <button id="cont_18_btn">Check</button>
+    <div id="cont_18">
+      <p id="cont_18_txt">
+        <p style="display:block;" id="cont_18_text">Text</p>
+      </p>
+    </div>
+  </div>
+</div> <!---->
+  
+
+<h3>[부모 영역에 aria-live="polite"]</h3>
+<button id="p_check2_btn">보기</button>
+
+<div class="p_check2" style="display: none;">
+  <div class="p_check_num_19">
+    <p>19. 부모 태그에 aria-live="polite" 제공된 상태 / display: none -> block / 텍스트 추가되는 상태 / 텍스트 딜레이 있음</p>
+
+    <button id="cont_19_btn">Check</button>
+    <div id="cont_19">
+      <p id="cont_19_txt" style="display:none;" aria-live="polite">
+        <p id="cont_19_text"></p>
+      </p>
+    </div>
+  </div>
+  
+  <div class="p_check_num_20">
+    <p>20. 부모 태그에 aria-live="polite" 제공된 상태 / display: none -> block / 텍스트 추가되는 상태 / 텍스트 딜레이 없음</p>
+
+    <button id="cont_20_btn">Check</button>
+    <div id="cont_20">
+      <p id="cont_20_txt" style="display:none;" aria-live="polite">
+        <p id="cont_20_text"></p>
+      </p>
+    </div>
+  </div>
+  
+  <div class="p_check_num_21">
+    <p>21. 부모 태그에 aria-live="polite" 제공된 상태 / display: none -> block / 텍스트 제공된 상태 /</p>
+
+    <button id="cont_21_btn">Check</button>
+    <div id="cont_21">
+      <p id="cont_21_txt" style="display:none;" aria-live="polite">
+        <p id="cont_21_text">Text</p>
+      </p>
+    </div>
+  </div>
+  
+  <div class="p_check_num_22">
+    <p>22. 부모 태그에 aria-live="polite" 제공된 상태 / display: block / 텍스트 추가되는 상태 / 텍스트 딜레이 있음</p>
+
+    <button id="cont_22_btn">Check</button>
+    <div id="cont_22">
+      <p id="cont_22_txt" style="display:block;" aria-live="polite">
+        <p id="cont_22_text"></p>
+      </p>
+    </div>
+  </div>
+  
+  <div class="p_check_num_23">
+    <p>23. 부모 태그에 aria-live="polite" 제공된 상태 / display: block / 텍스트 추가되는 상태 / 텍스트 딜레이 없음</p>
+
+    <button id="cont_23_btn">Check</button>
+    <div id="cont_23">
+      <p id="cont_23_txt" style="display:block;" aria-live="polite">
+        <p id="cont_23_text"></p>
+      </p>
+    </div>
+  </div>
+  
+  <div class="p_check_num_24">
+    <p>24. 부모 태그에 aria-live="polite" 제공된 상태 / display: block / 텍스트 제공된 상태 /</p>
+
+    <button id="cont_24_btn">Check</button>
+    <div id="cont_24">
+      <p id="cont_24_txt" style="display:block;" aria-live="polite">
+        <p id="cont_24_text">Text</p>
+      </p>
+    </div>
+  </div>
+  
+  <div class="p_check_num_25">
+    <p>25. 부모 태그에 aria-live="polite" 추가되는 상태 / 추가 시 딜레이 없음 / display: none -> block / 텍스트 추가되는 상태 / 텍스트 딜레이 있음</p>
+
+    <button id="cont_25_btn">Check</button>
+    <div id="cont_25">
+      <p id="cont_25_txt" style="display:none;">
+        <p id="cont_25_text"></p>
+      </p>
+    </div>
+  </div>
+  
+  <div class="p_check_num_26">
+    <p>26. 부모 태그에 aria-live="polite" 추가되는 상태 / 추가 시 딜레이 없음 / display: none -> block / 텍스트 추가되는 상태 / 텍스트 딜레이 없음</p>
+
+    <button id="cont_26_btn">Check</button>
+    <div id="cont_26">
+      <p id="cont_26_txt" style="display:none;">
+        <p id="cont_26_text"></p>
+      </p>
+    </div>
+  </div>
+  
+  <div class="p_check_num_27">
+    <p>27. 부모 태그에 aria-live="polite" 추가되는 상태 / 추가 시 딜레이 없음 / display: none -> block / 텍스트 제공된 상태 /</p>
+
+    <button id="cont_27_btn">Check</button>
+    <div id="cont_27">
+      <p id="cont_27_txt" style="display:none;">
+        <p id="cont_27_text">Text</p>
+      </p>
+    </div>
+  </div>
+  
+  <div class="p_check_num_28">
+    <p>28. 부모 태그에 aria-live="polite" 추가되는 상태 / 추가 시 딜레이 없음 / display: block / 텍스트 추가되는 상태 / 텍스트 딜레이 있음</p>
+
+    <button id="cont_28_btn">Check</button>
+    <div id="cont_28">
+      <p id="cont_28_txt" style="display:block;">
+        <p id="cont_28_text"></p>
+      </p>
+    </div>
+  </div>
+  
+  <div class="p_check_num_29">
+    <p>29. 부모 태그에 aria-live="polite" 추가되는 상태 / 추가 시 딜레이 없음 / display: block / 텍스트 추가되는 상태 / 텍스트 딜레이 없음</p>
+
+    <button id="cont_29_btn">Check</button>
+    <div id="cont_29">
+      <p id="cont_29_txt" style="display:block;">
+        <p id="cont_29_text"></p>
+      </p>
+    </div>
+  </div>
+  
+  <div class="p_check_num_30">
+    <p>30. 부모 태그에 aria-live="polite" 추가되는 상태 / 추가 시 딜레이 없음 / display: block / 텍스트 제공된 상태 /</p>
+
+    <button id="cont_30_btn">Check</button>
+    <div id="cont_30">
+      <p id="cont_30_txt" style="display:block;">
+        <p id="cont_30_text">Text</p>
+      </p>
+    </div>
+  </div>
+  
+  <div class="p_check_num_31">
+    <p>31. 부모 태그에 aria-live="polite" 추가되는 상태 / 추가 시 딜레이 있음 / display: none -> block / 텍스트 추가되는 상태 / 텍스트 딜레이 있음</p>
+
+    <button id="cont_31_btn">Check</button>
+    <div id="cont_31">
+      <p id="cont_31_txt" style="display:none;">
+        <p id="cont_31_text"></p>
+      </p>
+    </div>
+  </div>
+  
+  <div class="p_check_num_32">
+    <p>32. 부모 태그에 aria-live="polite" 추가되는 상태 / 추가 시 딜레이 있음 / display: none -> block / 텍스트 추가되는 상태 / 텍스트 딜레이 없음</p>
+
+    <button id="cont_32_btn">Check</button>
+    <div id="cont_32">
+      <p id="cont_32_txt" style="display:none;">
+        <p id="cont_32_text"></p>
+      </p>
+    </div>
+  </div>
+  
+  <div class="p_check_num_33">
+    <p>33. 부모 태그에 aria-live="polite" 추가되는 상태 / 추가 시 딜레이 있음 / display: none -> block / 텍스트 제공된 상태 /</p>
+
+    <button id="cont_33_btn">Check</button>
+    <div id="cont_33">
+      <p id="cont_33_txt" style="display:none;">
+        <p id="cont_33_text">Text</p>
+      </p>
+    </div>
+  </div>
+  
+  <div class="p_check_num_34">
+    <p>34. 부모 태그에 aria-live="polite" 추가되는 상태 / 추가 시 딜레이 있음 / display:  block / 텍스트 추가되는 상태 / 텍스트 딜레이 있음</p>
+
+    <button id="cont_34_btn">Check</button>
+    <div id="cont_34">
+      <p id="cont_34_txt" style="display:block;">
+        <p id="cont_34_text"></p>
+      </p>
+    </div>
+  </div>
+  
+  <div class="p_check_num_35">
+    <p>35. 부모 태그에 aria-live="polite" 추가되는 상태 / 추가 시 딜레이 있음 / display:  block / 텍스트 추가되는 상태 / 텍스트 딜레이 없음</p>
+
+    <button id="cont_35_btn">Check</button>
+    <div id="cont_35">
+      <p id="cont_35_txt" style="display:block;">
+        <p id="cont_35_text"></p>
+      </p>
+    </div>
+  </div>
+  
+  <div class="p_check_num_36">
+    <p>36. 부모 태그에 aria-live="polite" 추가되는 상태 / 추가 시 딜레이 있음 / display:  block / 텍스트 제공된 상태 /</p>
+
+    <button id="cont_36_btn">Check</button>
+    <div id="cont_36">
+      <p id="cont_36_txt" style="display:block;">
+        <p id="cont_36_text">Text</p>
+      </p>
+    </div>
+  </div>
+  
+</div><!--p_check 끝-->

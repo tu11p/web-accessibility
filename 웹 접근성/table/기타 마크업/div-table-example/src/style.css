@@ -1,0 +1,43 @@
+.table-container {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-rows: 50px 100px 100px 100px 100px;
+  gap: 20px;
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-areas:
+    ". . . ."
+    "left . . right"
+    "left . . right"
+    "left . . ."
+    "left . . .";
+}
+.item {
+  border: 1px solid;
+}
+.left {
+  grid-area: left;
+}
+.right {
+  grid-area: right;
+}
+[role="table"] {
+  display: table;
+}
+div[id] {
+  display: table-caption;
+}
+[role="row"] {
+  display: table-row;
+}
+[role="cell"],
+[role="columnheader"],
+[role="rowheader"] {
+  display: table-cell;
+  padding: 0.15em 0.25em;
+  width: 8em;
+  border: 1px solid;
+}
+[role="columnheader"],
+[role="rowheader"] {
+  font-weight: bold;
+}
